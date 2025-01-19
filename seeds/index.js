@@ -8,7 +8,7 @@ const { places, descriptors } = require('./seedHelpers');
 const Campground = require('../models/campground');
 
 //connect to database
-const dbUrl = process.env.DB_URL;
+const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/wanna-camp';
 mongoose.connect(dbUrl);
 
 // check database connection
