@@ -22,7 +22,7 @@ const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 const { contentSecurityPolicy } = require('helmet');
 
-const dbUrl = 'mongodb://127.0.0.1:27017/wanna-camp';
+const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/wanna-camp';
 
 mongoose.connect(dbUrl);
 
