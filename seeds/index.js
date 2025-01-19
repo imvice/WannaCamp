@@ -70,6 +70,18 @@ const seedDB = async () => {
 					url: 'https://res.cloudinary.com/dibf6qmj9/image/upload/v1737261595/glen-jackson-mzZVGFfMOkA-unsplash_oooqwc.jpg',
 					filename: 'WannaCamp/campgroundpic1',
 				},
+				{
+					url: 'https://res.cloudinary.com/dibf6qmj9/image/upload/v1737261595/wei-pan-Ta0A1miYZKc-unsplash_htob4j.jpg',
+					filename: 'WannaCamp/campgroundpic2',
+				},
+				{
+					url: 'https://res.cloudinary.com/dibf6qmj9/image/upload/v1737261595/kevin-ianeselli-ebnlHkqfUHY-unsplash_hvbp0u.jpg',
+					filename: 'WannaCamp/campgroundpic3',
+				},
+				{
+					url: 'https://res.cloudinary.com/dibf6qmj9/image/upload/v1737261595/andreas-ronningen-i9FLJwYhVQs-unsplash_d3wlqw.jpg',
+					filename: 'WannaCamp/campgroundpic4',
+				},
 			],
 			reviews: reviews.map(review => review._id), // Reference review IDs
 		});
